@@ -52,7 +52,42 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager">
+=======
+  <component name="RunManager" selected="JUnit.EmagLogInTest.emagLogIn">
+    <configuration name="EmagLogInTest.emagLogIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaurentiuTestare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testare.features.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Testare.features.search" />
+      <option name="MAIN_CLASS_NAME" value="Testare.features.search.EmagLogInTest" />
+      <option name="METHOD_NAME" value="emagLogIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchByKeywordStory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaurentiuTestare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testare.features.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Testare.features.search" />
+      <option name="MAIN_CLASS_NAME" value="Testare.features.search.SearchByKeywordStory" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> master
     <configuration name="SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TeoTestare" />
       <extension name="coverage">
@@ -103,7 +138,12 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.WizzLoginTest.test" />
+=======
+        <item itemvalue="JUnit.EmagLogInTest.emagLogIn" />
+        <item itemvalue="JUnit.SearchByKeywordStory" />
+>>>>>>> master
         <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_banana_should_display_the_corresponding_article" />
         <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article" />
       </list>
