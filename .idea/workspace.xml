@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2e94e8e-9ae6-4f2a-9395-af35d3004316" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testare/features/search/EmagLogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testare/features/search/EmagLogInTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/382ed8a1167d7f751aabb49e60c06225294e5fd4966ade52d964a7f8f0a98b9e.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/382ed8a1167d7f751aabb49e60c06225294e5fd4966ade52d964a7f8f0a98b9e.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/382ed8a1167d7f751aabb49e60c06225294e5fd4966ade52d964a7f8f0a98b9e.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/382ed8a1167d7f751aabb49e60c06225294e5fd4966ade52d964a7f8f0a98b9e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/382ed8a1167d7f751aabb49e60c06225294e5fd4966ade52d964a7f8f0a98b9e_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/382ed8a1167d7f751aabb49e60c06225294e5fd4966ade52d964a7f8f0a98b9e_screenshots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c_screenshots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-382ed8a1167d7f751aabb49e60c06225294e5fd4966ade52d964a7f8f0a98b9e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-382ed8a1167d7f751aabb49e60c06225294e5fd4966ade52d964a7f8f0a98b9e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/features/search/EmagLogInTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/features/search/EmagLogInTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/features/search/ImdbLogInGmailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/features/search/ImdbLogInGmailTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="f2e94e8e-9ae6-4f2a-9395-af35d3004316" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
