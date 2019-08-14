@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5bd862c-e435-4aa5-a861-fbf9874690a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testare/features/search/EmagLogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testare/features/search/EmagLogInTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/81cbe140d0360445fea394b3bb2bc4296557dcc49cd1885a2ad92e0b1df10869.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/81cbe140d0360445fea394b3bb2bc4296557dcc49cd1885a2ad92e0b1df10869.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/81cbe140d0360445fea394b3bb2bc4296557dcc49cd1885a2ad92e0b1df10869.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/81cbe140d0360445fea394b3bb2bc4296557dcc49cd1885a2ad92e0b1df10869.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/81cbe140d0360445fea394b3bb2bc4296557dcc49cd1885a2ad92e0b1df10869_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/81cbe140d0360445fea394b3bb2bc4296557dcc49cd1885a2ad92e0b1df10869_screenshots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-81cbe140d0360445fea394b3bb2bc4296557dcc49cd1885a2ad92e0b1df10869.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-81cbe140d0360445fea394b3bb2bc4296557dcc49cd1885a2ad92e0b1df10869.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/features/search/EmagLogInTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/features/search/EmagLogInTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="c5bd862c-e435-4aa5-a861-fbf9874690a1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
