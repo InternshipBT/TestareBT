@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5bd862c-e435-4aa5-a861-fbf9874690a1" name="Default Changelist" comment="" />
+    <list default="true" id="c5bd862c-e435-4aa5-a861-fbf9874690a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchByKeywordStory.searching_by_keyword_banana_should_display_the_corresponding_article">
+  <component name="RunManager">
     <configuration name="SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TeoTestare" />
       <extension name="coverage">
@@ -73,8 +85,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WizzLoginTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaurentiuTestare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testare.features.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Testare.features.search" />
+      <option name="MAIN_CLASS_NAME" value="Testare.features.search.WizzLoginTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WizzLoginTest.test" />
         <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_banana_should_display_the_corresponding_article" />
         <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article" />
       </list>
@@ -92,5 +121,16 @@
       <updated>1565610656260</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
