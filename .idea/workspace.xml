@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5bd862c-e435-4aa5-a861-fbf9874690a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,8 +50,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article (1)">
-    <configuration name="SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ImdbLogInGmailTest.LogInImdbGMail (1)">
+    <configuration name="ImdbLogInGmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LaurentiuTestare" />
       <extension name="coverage">
         <pattern>
@@ -52,15 +60,46 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Testare.features.search" />
-      <option name="MAIN_CLASS_NAME" value="Testare.features.search.SearchByKeywordStory" />
-      <option name="METHOD_NAME" value="searching_by_keyword_apple_should_display_the_corresponding_article" />
+      <option name="MAIN_CLASS_NAME" value="Testare.features.search.ImdbLogInGmailTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImdbLogInGmailTest.LogInImdbGMail (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaurentiuTestare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testare.features.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Testare.features.search" />
+      <option name="MAIN_CLASS_NAME" value="Testare.features.search.ImdbLogInGmailTest" />
+      <option name="METHOD_NAME" value="LogInImdbGMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImdbLogInGmailTest.LogInImdbGMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaurentiuTestare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testare.pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Testare.features.search" />
+      <option name="MAIN_CLASS_NAME" value="Testare.pages.ImdbLogInGmailTest" />
+      <option name="METHOD_NAME" value="LogInImdbGMail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TeoTestare" />
+      <module name="LaurentiuTestare" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Testare.features.search.*" />
@@ -93,9 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ImdbLogInGmailTest.LogInImdbGMail (1)" />
+        <item itemvalue="JUnit.ImdbLogInGmailTest" />
+        <item itemvalue="JUnit.ImdbLogInGmailTest.LogInImdbGMail" />
         <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article (1)" />
         <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_banana_should_display_the_corresponding_article" />
-        <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article" />
       </list>
     </recent_temporary>
   </component>
