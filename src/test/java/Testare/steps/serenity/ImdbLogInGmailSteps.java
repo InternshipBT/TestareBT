@@ -42,8 +42,8 @@ public class ImdbLogInGmailSteps {
     }
 
     @Step
-    public void ValidPassw() {
-        imdbPage.enter_passw();
+    public void ValidPassw(String password) {
+        imdbPage.enter_passw(password);
     }
 
     @Step

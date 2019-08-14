@@ -37,8 +37,8 @@ public class ImdbLogInGmailPage extends PageObject {
         WriteEmail.type(email);
     }
 
-    public void enter_passw() {
-        WritePass.sendKeys("confident1612*&*");
+    public void enter_passw(String password) {
+        WritePass.sendKeys(password);
     }
 
     public void LogInButton(){

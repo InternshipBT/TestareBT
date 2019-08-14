@@ -1,5 +1,6 @@
 package Testare.features.search;
 
+import Testare.Credentials;
 import Testare.steps.serenity.ImdbLogInGmailSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
@@ -23,10 +24,10 @@ public class ImdbLogInGmailTest {
         ImdbTestSteps.is_the_home_page();
         ImdbTestSteps.clickLoginButton();
         ImdbTestSteps.clickGoogleButton();
-        ImdbTestSteps.ValidEmail("david.petra.pd@gmail.com");
+        ImdbTestSteps.ValidEmail(Credentials.IMDB_EMAIL);
         ImdbTestSteps.clickMailButton();
         Thread.sleep(5000);
-        ImdbTestSteps.ValidPassw();
+        ImdbTestSteps.ValidPassw(Credentials.IMDB_PASSWORD);
         ImdbTestSteps.clickPassButTon();
     }
 
