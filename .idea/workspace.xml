@@ -5,6 +5,10 @@
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" afterDir="false" />
+>>>>>>> master
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +41,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -50,8 +55,16 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.ImdbLogInGmailTest.LogInImdbGMail (1)">
     <configuration name="ImdbLogInGmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+<<<<<<< HEAD
+  <component name="RunManager">
+=======
+  <component name="RunManager" selected="JUnit.EmagLogInTest.emagLogIn">
+    <configuration name="EmagLogInTest.emagLogIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> master
       <module name="LaurentiuTestare" />
       <extension name="coverage">
         <pattern>
@@ -60,6 +73,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Testare.features.search" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="Testare.features.search.ImdbLogInGmailTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -77,27 +91,48 @@
       <option name="PACKAGE_NAME" value="Testare.features.search" />
       <option name="MAIN_CLASS_NAME" value="Testare.features.search.ImdbLogInGmailTest" />
       <option name="METHOD_NAME" value="LogInImdbGMail" />
+=======
+      <option name="MAIN_CLASS_NAME" value="Testare.features.search.EmagLogInTest" />
+      <option name="METHOD_NAME" value="emagLogIn" />
+>>>>>>> master
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="ImdbLogInGmailTest.LogInImdbGMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LaurentiuTestare" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Testare.pages.*" />
+=======
+    <configuration name="SearchByKeywordStory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaurentiuTestare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testare.features.search.*" />
+>>>>>>> master
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Testare.features.search" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="Testare.pages.ImdbLogInGmailTest" />
       <option name="METHOD_NAME" value="LogInImdbGMail" />
       <option name="TEST_OBJECT" value="method" />
+=======
+      <option name="MAIN_CLASS_NAME" value="Testare.features.search.SearchByKeywordStory" />
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> master
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> master
     <configuration name="SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LaurentiuTestare" />
       <extension name="coverage">
@@ -130,12 +165,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WizzLoginTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaurentiuTestare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testare.features.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Testare.features.search" />
+      <option name="MAIN_CLASS_NAME" value="Testare.features.search.WizzLoginTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.ImdbLogInGmailTest.LogInImdbGMail (1)" />
         <item itemvalue="JUnit.ImdbLogInGmailTest" />
         <item itemvalue="JUnit.ImdbLogInGmailTest.LogInImdbGMail" />
         <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article (1)" />
+=======
+<<<<<<< HEAD
+        <item itemvalue="JUnit.WizzLoginTest.test" />
+=======
+        <item itemvalue="JUnit.EmagLogInTest.emagLogIn" />
+        <item itemvalue="JUnit.SearchByKeywordStory" />
+>>>>>>> master
+>>>>>>> master
         <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_banana_should_display_the_corresponding_article" />
       </list>
     </recent_temporary>
@@ -158,9 +218,13 @@
       <map>
         <entry key="MAIN">
           <value>
+<<<<<<< HEAD
             <State>
               <option name="COLUMN_ORDER" />
             </State>
+=======
+            <State />
+>>>>>>> master
           </value>
         </entry>
       </map>
