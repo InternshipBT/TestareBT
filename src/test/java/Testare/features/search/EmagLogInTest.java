@@ -1,5 +1,6 @@
 package Testare.features.search;
 
+import Testare.Credentials;
 import Testare.steps.serenity.EmagLogInSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.*;
@@ -27,7 +28,7 @@ public class EmagLogInTest {
     public void emagLogIn()
     {
         laurentiu.is_the_home_page();
-        laurentiu.loginEmag("testarelaurentiu@gmail.com","AstaEParola");
+        laurentiu.loginEmag(Credentials.EMAG_EMAIL,Credentials.EMAG_PASSWORD);
     }
 
 
