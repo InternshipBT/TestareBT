@@ -2,24 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5bd862c-e435-4aa5-a861-fbf9874690a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testare/features/search/SearchByKeywordStory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testare/features/search/SearchByKeywordStory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/0f5e11ee59a371dc75723d9f98ee947fd88a93fc53a3530f70c75b287ec0a1d9.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/0f5e11ee59a371dc75723d9f98ee947fd88a93fc53a3530f70c75b287ec0a1d9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/0f5e11ee59a371dc75723d9f98ee947fd88a93fc53a3530f70c75b287ec0a1d9.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/0f5e11ee59a371dc75723d9f98ee947fd88a93fc53a3530f70c75b287ec0a1d9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-d645c90534b39c87a0807eb39f5bced610e4d491e393dc2f68650000d6c6d7ef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-d645c90534b39c87a0807eb39f5bced610e4d491e393dc2f68650000d6c6d7ef.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/d645c90534b39c87a0807eb39f5bced610e4d491e393dc2f68650000d6c6d7ef.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d645c90534b39c87a0807eb39f5bced610e4d491e393dc2f68650000d6c6d7ef.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/d645c90534b39c87a0807eb39f5bced610e4d491e393dc2f68650000d6c6d7ef.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d645c90534b39c87a0807eb39f5bced610e4d491e393dc2f68650000d6c6d7ef.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/d645c90534b39c87a0807eb39f5bced610e4d491e393dc2f68650000d6c6d7ef_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d645c90534b39c87a0807eb39f5bced610e4d491e393dc2f68650000d6c6d7ef_screenshots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,7 +49,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchByKeywordStory">
+  <component name="RunManager" selected="JUnit.EmagLogInTest.emagLogIn">
+    <configuration name="EmagLogInTest.emagLogIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LaurentiuTestare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testare.features.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Testare.features.search" />
+      <option name="MAIN_CLASS_NAME" value="Testare.features.search.EmagLogInTest" />
+      <option name="METHOD_NAME" value="emagLogIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SearchByKeywordStory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LaurentiuTestare" />
       <extension name="coverage">
@@ -102,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmagLogInTest.emagLogIn" />
         <item itemvalue="JUnit.SearchByKeywordStory" />
         <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_banana_should_display_the_corresponding_article" />
         <item itemvalue="JUnit.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article" />
