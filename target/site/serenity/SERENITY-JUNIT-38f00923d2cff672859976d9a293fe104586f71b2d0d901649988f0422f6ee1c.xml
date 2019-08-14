@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testare.features.search.WizzLoginTest" skipped="0" tests="1" time="24.45" timestamp="2019-08-14T15:12:29.943777400+03:00[Europe/Athens]"><testcase classname="Testare.features.search.WizzLoginTest" name="Test"/></testsuite>
+=======
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testare.features.search.WizzLoginTest" skipped="0" tests="1" time="12.64" timestamp="2019-08-14T15:27:13.215321300+03:00[Europe/Athens]"><testcase classname="Testare.features.search.WizzLoginTest" name="Test"/></testsuite>
+>>>>>>> master

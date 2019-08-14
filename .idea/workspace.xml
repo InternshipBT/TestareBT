@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f2e94e8e-9ae6-4f2a-9395-af35d3004316" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="c5bd862c-e435-4aa5-a861-fbf9874690a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/f784819331d5e9f69a21e131ed9ea3358bcd83d2766fa23f98c3a9bafde6a1e3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_f784819331d5e9f69a21e131ed9ea3358bcd83d2766fa23f98c3a9bafde6a1e3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/Testare/Credentials.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testare/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testare/Credentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testare/features/search/WizzLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testare/features/search/WizzLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c_screenshots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/features/search/WizzLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/features/search/WizzLoginTest.class" afterDir="false" />
+    </list>
+>>>>>>> master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +44,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.EmagLogInTest.emagLogIn">
     <configuration name="EmagLogInTest.emagLogIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LaurentiuTestare" />
@@ -59,6 +78,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="RunManager">
+>>>>>>> master
     <configuration name="WizzLoginTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LaurentiuTestare" />
       <extension name="coverage">
@@ -77,8 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.EmagLogInTest.emagLogIn" />
         <item itemvalue="JUnit.ImdbLogInGmailTest.LogInImdbGMail" />
+=======
+>>>>>>> master
         <item itemvalue="JUnit.WizzLoginTest.test" />
       </list>
     </recent_temporary>
