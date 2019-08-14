@@ -1,4 +1,5 @@
 package Testare.features.search;
+import Testare.Credentials;
 import Testare.steps.serenity.WizzLoginSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
@@ -22,7 +23,7 @@ public class WizzLoginTest {
     @Test
     public void test() {
         anna.is_the_home_page();
-        anna.logInWizz("the_samoan_radu@yahoo.com", "TestareBT1");
+        anna.logInWizz(Credentials.WIZZ_EMAIL, Credentials.WIZZ_PASSWORD);
     }
 }
 
