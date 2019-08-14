@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testare.features.search.SearchByKeywordStory" skipped="0" tests="1" time="14.29" timestamp="2019-08-14T10:23:46.472932800+03:00[Europe/Athens]"><testcase classname="Testare.features.search.SearchByKeywordStory" name="Searching by keyword banana should display the corresponding article"/></testsuite>
