@@ -1,4 +1,4 @@
-package Testare.steps.serenity;
+package Testare.steps;
 import Testare.pages.AutoPracticePage;
 import Testare.pages.WizzLogInPage;
 import net.thucydides.core.annotations.Step;

@@ -1,4 +1,4 @@
-package Testare.steps.serenity;
+package Testare.steps;
 
 import Testare.pages.MadisonPages;
 import net.thucydides.core.annotations.Step;

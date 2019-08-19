@@ -1,4 +1,4 @@
-package Tests;
+package Testare.Tests;
 
 
 import Testare.Credentials;
