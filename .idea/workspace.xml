@@ -1,38 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa79084f-9996-4398-9c2c-dbbb85749c42" name="Default Changelist" comment="">
+    <list default="true" id="a848c6d8-fee8-47be-9817-5c66e8046d69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Testare/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testare/Credentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testare/features/search/WizzLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testare/features/search/WizzLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testare/pages/WizzLogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testare/pages/WizzLogInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testare/steps/serenity/WizzLoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testare/steps/serenity/WizzLoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c_screenshots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-38f00923d2cff672859976d9a293fe104586f71b2d0d901649988f0422f6ee1c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/flow/serenity.configuration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/Credentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/Credentials.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/features/search/ImdbLogInGmailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/features/search/ImdbLogInGmailTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/features/search/WizzLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/features/search/WizzLoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/pages/ImdbLogInGmailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/pages/ImdbLogInGmailPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/pages/WizzLogInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/pages/WizzLogInPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/steps/serenity/ImdbLogInGmailSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/steps/serenity/ImdbLogInGmailSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Testare/steps/serenity/WizzLoginSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Testare/steps/serenity/WizzLoginSteps.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,68 +22,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AutoPracticeTest.test">
-    <configuration name="AutoPracticeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LaurentiuTestare" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Testare.features.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Testare.features.search" />
-      <option name="MAIN_CLASS_NAME" value="Testare.features.search.AutoPracticeTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WizzLoginTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LaurentiuTestare" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Testare.features.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Testare.features.search" />
-      <option name="MAIN_CLASS_NAME" value="Testare.features.search.WizzLoginTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.AutoPracticeTest.test" />
-        <item itemvalue="JUnit.WizzLoginTest.test" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="aa79084f-9996-4398-9c2c-dbbb85749c42" name="Default Changelist" comment="" />
-      <created>1565786030443</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1565786030443</updated>
-    </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
