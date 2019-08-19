@@ -16,11 +16,20 @@ public class WizzLoginSteps {
     }
 
     @Step
-    public void logInWizz(String email, String password) {
+    public void logInWizz(String email, String password) throws InterruptedException {
         wizzPage.clicklogin();
         wizzPage.enterEmail(email);
         wizzPage.enterPassword(password);
         wizzPage.clickSignIn();
+        wizzPage.clickLanguage();
+
+    }
+
+    @Step
+    public void logOutWizz() throws InterruptedException {
+        wizzPage.clickaccount();
+        Thread.sleep(4000);
+        wizzPage.clickLogOut();
     }
 
 
