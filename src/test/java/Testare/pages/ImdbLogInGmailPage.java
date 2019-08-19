@@ -2,13 +2,18 @@ package Testare.pages;
 
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import net.serenitybdd.core.pages.WebElementFacade;
+
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 
 import net.thucydides.core.pages.PageObject;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
@@ -19,39 +24,38 @@ public class ImdbLogInGmailPage extends PageObject {
     private WebElementFacade LogInButton;
 
     @FindBy(xpath="//*[@id=\"signin-options\"]/div/div[1]/a[4]")
-    private WebElementFacade ClickGoogleButton;
+    private WebElementFacade GoogleMailButton;
 
     @FindBy(css = "#identifierId")
-    private WebElementFacade WriteEmail;
+    private WebElementFacade EmailField;
 
     @FindBy(css= "#identifierNext")
-    private WebElementFacade ClickMailButton;
+    private WebElementFacade InainteMailButton;
 
     @FindBy(css = "#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input")
-    private WebElementFacade WritePass;
+    private WebElementFacade PasswField;
 
     @FindBy(css = "#passwordNext")
-    private WebElementFacade ClickPasswButton;
+    private WebElementFacade InaintePasswButton;
 
-    public void enter_email(String email) {
-        WriteEmail.type(email);
+    @FindBy(css="#nblogout")
+    private WebElementFacade LogOutButton;
+
+//    Actions builder = new Actions(driver);
+//    WebElement element = driver.findElement(By.linkText("Put your text here"));
+//    builder.moveToElement(element).build().perform();
+
+    public void enter_email(String email) { EmailField.type(email); }
+
+    public void enter_password(String password) {
+        PasswField.sendKeys(password);
     }
 
-    public void enter_passw(String password) {
-        WritePass.sendKeys(password);
-    }
+    public void click_logIn_Button(){ LogInButton.click(); }
+    public void click_Google_Mail_Button(){ GoogleMailButton.click(); }
+    public void click_Inainte_mail_button(){ InainteMailButton.click(); }
+    public void click_inainte_pasw_button(){ InaintePasswButton.click(); }
+    public void Click_LogOut_Button() {LogOutButton.click();}
 
-    public void LogInButton(){
-        LogInButton.click();
-    }
-    public void GoogleButton(){
-        ClickGoogleButton.click();
-    }
-    public void ClickMailButton(){
-        ClickMailButton.click();
-    }
-    public void ClickPasswButton(){
-        ClickPasswButton.click();
-    }
 
 }

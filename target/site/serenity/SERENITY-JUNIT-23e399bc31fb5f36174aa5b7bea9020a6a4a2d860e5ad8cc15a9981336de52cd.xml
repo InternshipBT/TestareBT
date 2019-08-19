@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testare.Tests.ImdbLogInGmailTest" skipped="0" tests="1" time="6.19" timestamp="2019-08-19T12:15:24.831125900+03:00[Europe/Athens]"><testcase classname="Testare.Tests.ImdbLogInGmailTest" name="Log  in imdb  test  gmail"><failure message="The following error occurred: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled</failure><system-err>The following error occurred: Expected enabled element was not enabled&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+Testare.pages.ImdbLogInGmailPage.click_logIn_Button(ImdbLogInGmailPage.java:54)&#13;
+Testare.steps.ImdbLogInGmailSteps.LogIn_On_imdb_Page(ImdbLogInGmailSteps.java:47)&#13;
+Testare.Tests.ImdbLogInGmailTest.Log_In_imdb_Test_Gmail(ImdbLogInGmailTest.java:38)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+</system-err></testcase></testsuite>
