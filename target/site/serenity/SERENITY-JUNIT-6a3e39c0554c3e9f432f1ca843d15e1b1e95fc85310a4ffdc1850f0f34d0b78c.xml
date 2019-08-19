@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testare.features.search.AutoPracticeTest" skipped="0" tests="1" time="11.01" timestamp="2019-08-19T14:51:10.965615+03:00[Europe/Athens]"><testcase classname="Testare.features.search.AutoPracticeTest" name="Test"><failure message="User was not logged in expected:&lt;...elcome to your accou[nt]. Here you can manag...&gt; but was:&lt;...elcome to your accou[]. Here you can manag...&gt;" type="org.junit.ComparisonFailure">User was not logged in expected:&lt;...elcome to your accou[nt]. Here you can manag...&gt; but was:&lt;...elcome to your accou[]. Here you can manag...&gt;</failure><system-err>User was not logged in expected:&lt;...elcome to your accou[nt]. Here you can manag...&gt; but was:&lt;...elcome to your accou[]. Here you can manag...&gt;&#13;
+Testare.steps.serenity.AutoPracticeSteps.assertLogIn(AutoPracticeSteps.java:32)&#13;
+Testare.features.search.AutoPracticeTest.test(AutoPracticeTest.java:30)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+</system-err></testcase></testsuite>

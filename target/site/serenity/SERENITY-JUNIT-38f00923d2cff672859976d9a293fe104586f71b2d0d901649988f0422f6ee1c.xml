@@ -1,5 +1,11 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testare.features.search.WizzLoginTest" skipped="0" tests="1" time="24.45" timestamp="2019-08-14T15:12:29.943777400+03:00[Europe/Athens]"><testcase classname="Testare.features.search.WizzLoginTest" name="Test"/></testsuite>
-=======
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testare.features.search.WizzLoginTest" skipped="0" tests="1" time="12.64" timestamp="2019-08-14T15:27:13.215321300+03:00[Europe/Athens]"><testcase classname="Testare.features.search.WizzLoginTest" name="Test"/></testsuite>
->>>>>>> master
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testare.features.search.WizzLoginTest" skipped="0" tests="1" time="31.55" timestamp="2019-08-19T13:55:24.653308800+03:00[Europe/Athens]"><testcase classname="Testare.features.search.WizzLoginTest" name="Test"><failure message="The following error occurred: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled</failure><system-err>The following error occurred: Expected enabled element was not enabled&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+Testare.pages.WizzLogInPage.clickLanguage(WizzLogInPage.java:77)&#13;
+Testare.steps.serenity.WizzLoginSteps.logInWizz(WizzLoginSteps.java:24)&#13;
+Testare.features.search.WizzLoginTest.test(WizzLoginTest.java:28)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+</system-err></testcase></testsuite>
