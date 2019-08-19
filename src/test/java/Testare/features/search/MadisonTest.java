@@ -27,5 +27,7 @@ public class MadisonTest {
     public void LoginMadison(){
         madisonSteps.is_the_home_page();
         madisonSteps.loginMadison(MADISON_EMAIL, MADISON_PASSWORD);
+        madisonSteps.assertsLogIn();
     }
+
 }

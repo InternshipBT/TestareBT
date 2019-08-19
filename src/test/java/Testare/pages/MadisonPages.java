@@ -30,6 +30,8 @@ public class MadisonPages extends PageObject{
     @FindBy(xpath = "//button[@name='send']")
     private WebElementFacade submitButton;
 
+    @FindBy(xpath = "//p[@class='welcome-msg']")
+    private WebElementFacade welcomeMSG;
 
     public void clickMyAccount(){
         accountIcon.click();
@@ -51,6 +53,10 @@ public class MadisonPages extends PageObject{
     public void clickSubmit(){
 
         submitButton.click();
+    }
+
+    public String assertLogin(){
+        return welcomeMSG.getText();
     }
 
 }
