@@ -13,4 +13,9 @@ public class Credentials {
     public static final String WIZZ_EMAIL= "the_samoan_radu@yahoo.com";
     public static final String WIZZ_PASSWORD= "TestareBT1";
 
+    public static final String AP_EMAIL= "testarelaurentiu@gmail.com" ;
+    public static  final String AP_PASSWORD= "AstaEParola";
+
+
+
 }

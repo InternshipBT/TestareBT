@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Testare.Tests.ImdbLogInGmailTest" skipped="0" tests="1" time="16.09" timestamp="2019-08-19T13:38:42.746874600+03:00[Europe/Athens]"><testcase classname="Testare.Tests.ImdbLogInGmailTest" name="Log in  on imdb  page  test"><error type="java.lang.IllegalMonitorStateException"/><system-err>null&#13;
+Testare.Tests.ImdbLogInGmailTest.LogIn_On_imdb_Page_Test(ImdbLogInGmailTest.java:40)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+</system-err></testcase></testsuite>
