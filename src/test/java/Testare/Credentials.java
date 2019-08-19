@@ -13,4 +13,6 @@ public class Credentials {
     public static final String WIZZ_EMAIL= "the_samoan_radu@yahoo.com";
     public static final String WIZZ_PASSWORD= "TestareBT1";
 
+    public static final String INSTAGRAM_EMAIL= "testareTeo@gmail.com";
+    public static final String INSTAGRAM_PASSWORD= "ParolaDeTestare";
 }
