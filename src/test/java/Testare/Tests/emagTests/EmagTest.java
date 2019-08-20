@@ -1,6 +1,8 @@
 package Testare.Tests.emagTests;
 
+import Testare.Credentials;
 import Testare.steps.emagSteps.EmagBasketSteps;
+import Testare.steps.emagSteps.EmagLogInSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.*;
 
@@ -11,20 +13,27 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
-public class EmagBasketTest {
+public class EmagTest {
 
     @Managed(uniqueSession = true)
     public WebDriver webdriver;
 
     @Steps
     public EmagBasketSteps laurentiu;
+    public EmagLogInSteps laurentiu1;
 
-    private String[] products={"Ghiozdan","Penar","Stilou"};
+    private String[] products = { "Penar", "Stilou","Ghiozdan"};
 
     @Before
-    public void maximizeWindow()
-    {
+    public void maximizeWindow() {
         webdriver.manage().window().maximize();
+    }
+
+
+    @Test
+    public void emagLogIn() throws InterruptedException {
+        laurentiu.isTheHomePage();
+        laurentiu1.loginEmag(Credentials.EMAG_EMAIL,Credentials.EMAG_PASSWORD);
     }
 
     @Test
@@ -47,11 +56,6 @@ public class EmagBasketTest {
         laurentiu.assertListSize();
     }
 
-    @Test
-    public void priceList() throws InterruptedException {
-        laurentiu.isTheHomePage();
-        laurentiu.priceList(products);
-    }
 
     @Test
     public void assertPriceList() throws InterruptedException {
@@ -60,5 +64,10 @@ public class EmagBasketTest {
         laurentiu.assertPriceList(products);
     }
 
+    @Test
+    public void assertNameOfProducts() {
+        laurentiu.isTheHomePage();
+        laurentiu.searchElemenetAndAssertProductName(products);
+    }
 
 }
