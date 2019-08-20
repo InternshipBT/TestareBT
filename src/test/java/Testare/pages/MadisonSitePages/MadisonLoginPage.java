@@ -1,5 +1,4 @@
-package Testare.pages;
-
+package Testare.pages.MadisonSitePages;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -12,14 +11,8 @@ import net.thucydides.core.pages.PageObject;
 
 import java.util.List;
 
-@DefaultUrl("https://fasttrackit.org/selenium-test/")
-public class MadisonPages extends PageObject{
 
-    @FindBy(css = ".skip-link.skip-account")
-    private WebElementFacade accountIcon;
-
-    @FindBy(xpath = "//a[@title='Log In']")
-    private WebElementFacade loginLabel;
+public class MadisonLoginPage extends PageObject{
 
     @FindBy (css = "#email.input-text.required-entry.validate-email")
     private WebElementFacade enterEmail;
@@ -29,17 +22,6 @@ public class MadisonPages extends PageObject{
 
     @FindBy(xpath = "//button[@name='send']")
     private WebElementFacade submitButton;
-
-    @FindBy(xpath = "//p[@class='welcome-msg']")
-    private WebElementFacade welcomeMSG;
-
-    public void clickMyAccount(){
-        accountIcon.click();
-    }
-
-    public void clickLogIn(){
-        loginLabel.click();
-    }
 
     public void enterMail(String gmailTest){
 
@@ -54,9 +36,4 @@ public class MadisonPages extends PageObject{
 
         submitButton.click();
     }
-
-    public String assertLogin(){
-        return welcomeMSG.getText();
-    }
-
 }

@@ -1,24 +1,30 @@
-package Testare.steps;
+package Testare.steps.MadisonSteps;
 
-import Testare.pages.MadisonPages;
+import Testare.pages.MadisonSitePages.MadisonHomePage;
+import Testare.pages.MadisonSitePages.MadisonLoginPage;
+import Testare.pages.MadisonSitePages.MadisonStartPage;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.hasItem;
 
-public class MadisonSteps {
-    MadisonPages loginPage;
+public class MadisonLoginSteps {
+    MadisonHomePage homePage;
+    MadisonLoginPage loginPage;
+    MadisonStartPage startPage;
+
 
     @Step
     public void is_the_home_page() {
-        loginPage.open();
+
+        startPage.open();
+
     }
 
     @Step
     public void loginMadison(String gmail_email,String gmail_password) {
-        loginPage.clickMyAccount();
-        loginPage.clickLogIn();
+
+        startPage.clickMyAccount();
+        startPage.clickLogIn();
         loginPage.enterMail(gmail_email);
         loginPage.enterPass(gmail_password);
         loginPage.clickSubmit();
@@ -26,10 +32,10 @@ public class MadisonSteps {
 
     @Step
     public void assertsLogIn(){
-        String actual = loginPage.assertLogin();
+        String actual = homePage.assertLogin();
         String expected = "WELCOME, TEODORA MIHUC!";
 
         Assert.assertEquals("This is not the log in page.", actual, expected);
-
     }
+
 }
