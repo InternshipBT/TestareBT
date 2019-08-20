@@ -1,4 +1,4 @@
-package Testare.pages;
+package Testare.pages.emagPages;
 
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.pages.PageObject;
@@ -17,14 +17,8 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import javax.swing.text.html.HTML;
 import java.util.List;
 
-@DefaultUrl("https://www.emag.ro/")
-public class EmagBasketPage extends PageObject {
 
-    @FindBy (xpath = "//input[@id='searchboxTrigger']")
-    private WebElementFacade searchBox;
-
-    @FindBy (xpath = "//i[@class='em em-search']")
-    private WebElementFacade searchButton;
+public class EmagProductsPage extends PageObject{
 
     @FindBy (xpath = "(//div[@class='card-item js-product-data'])[4] //button[@type='submit']")
     private WebElementFacade addInBasketFourthElButton;
@@ -38,38 +32,13 @@ public class EmagBasketPage extends PageObject {
     @FindBy (xpath = "//a[@class='btn btn-primary btn-sm btn-block']")
     private WebElementFacade viewYourBasketButton;
 
-    @FindBy (xpath = "//button[@class='col-xs-7 col-sm-6 btn btn-primary js-accept gtm_h76e8zjgoo']")
-    private WebElementFacade acceptCookiesButton;
-
-    @FindBy(xpath = "//h1[@class='cart']")
-    private WebElementFacade myBasketLabel;
-
-    @FindBy (xpath = "//div[@class='cart-widget cart-line']")
-    private List<WebElementFacade> items;
-
-    @FindBy(xpath = "(//div[@class='card-item js-product-data'])[1] //button[@class='add-to-favorites btn btn-lg btn-block gtm_xik37z hidden-list']")
-    private WebElementFacade addToFavoriteButton;
 
     @FindBy (xpath = "//div[@class='card-section-wrapper js-section-wrapper']")
     private List<WebElementFacade> productsList;
 
-    @FindBy (xpath = "//div[@class='header-back'] //a")
-    private WebElementFacade backToSiteButton;
+    @FindBy(xpath = "(//div[@class='card-item js-product-data'])[1] //button[@class='add-to-favorites btn btn-lg btn-block gtm_xik37z hidden-list']")
+    private WebElementFacade addToFavoriteButton;
 
-    public void clickOnSearchBox()
-    {
-        searchBox.click();
-    }
-
-    public void searchElement(String product)
-    {
-        searchBox.type(product);
-    }
-
-    public void clickSearchButton()
-    {
-        searchButton.click();
-    }
 
     public void clickAddInBasketFourthElButton()
     {
@@ -91,28 +60,6 @@ public class EmagBasketPage extends PageObject {
         viewYourBasketButton.click();
     }
 
-    public void clickOnAcceptCookiesButton()
-    {
-        acceptCookiesButton.click();
-    }
-
-    public void clickBackToSiteButton()
-    {
-        backToSiteButton.click();
-    }
-
-    public String getLabel()
-    {
-        return myBasketLabel.getText();
-    }
-
-    public int getListSize()
-    {
-        int i=0;
-        for(WebElementFacade x:items)
-            i++;
-        return i;
-    }
 
     public void addInPriceList(String element)
     {
@@ -121,6 +68,4 @@ public class EmagBasketPage extends PageObject {
         int price=Integer.parseInt(number);
         Serenity.getCurrentSession().put(element,price);
     }
-
-
 }

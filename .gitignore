@@ -24,7 +24,7 @@ hs_err_pid*
 
 # Folders
 .idea/
-target/
+/target/
 
 # Files
 TeoTestare.iml

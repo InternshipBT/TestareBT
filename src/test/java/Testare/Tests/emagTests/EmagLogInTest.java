@@ -1,10 +1,11 @@
-package Testare.Tests;
+package Testare.Tests.emagTests;
 
 import Testare.Credentials;
-import Testare.steps.EmagLogInSteps;
+import Testare.steps.emagSteps.EmagLogInSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -19,10 +20,15 @@ public class EmagLogInTest {
     public EmagLogInSteps laurentiu;
 
 
-    @Test
-    public void emagLogIn()
+    @Before
+    public void maximizeWindow()
     {
-        laurentiu.is_the_home_page();
+        webdriver.manage().window().maximize();
+    }
+
+    @Test
+    public void emagLogIn() throws InterruptedException {
+        laurentiu.isTheHomePage();
         laurentiu.loginEmag(Credentials.EMAG_EMAIL,Credentials.EMAG_PASSWORD);
     }
 

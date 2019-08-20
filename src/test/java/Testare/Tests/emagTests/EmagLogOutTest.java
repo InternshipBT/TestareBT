@@ -1,20 +1,14 @@
-package Testare.features.search;
+package Testare.Tests.emagTests;
 
 import Testare.Credentials;
-import Testare.steps.EmagLogInSteps;
-import Testare.steps.EmagLogOutSteps;
-import net.serenitybdd.core.annotations.findby.FindBy;
-import net.serenitybdd.core.pages.WebElementFacade;
+import Testare.steps.emagSteps.EmagLogOutSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.*;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
 
 @RunWith(SerenityRunner.class)
@@ -27,9 +21,16 @@ public class EmagLogOutTest {
     public EmagLogOutSteps laurentiu;
 
 
+    @Before
+    public void maximizeWindow()
+    {
+        webdriver.manage().window().maximize();
+    }
+
+
     @Test
     public void emagLogOut() {
-        laurentiu.is_the_home_page();
+        laurentiu.isTheHomePage();
         laurentiu.logInEmag(Credentials.EMAG_EMAIL, Credentials.EMAG_PASSWORD);
     }
 }

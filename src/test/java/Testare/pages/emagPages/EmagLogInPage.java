@@ -1,4 +1,4 @@
-package Testare.pages;
+package Testare.pages.emagPages;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
@@ -18,11 +18,8 @@ import org.openqa.selenium.interactions.MoveMouseAction;
 import javax.swing.text.html.HTML;
 import java.util.List;
 
-@DefaultUrl("https://www.emag.ro/")
 
 public class EmagLogInPage extends PageObject {
-    @FindBy(xpath = "//a[@id='my_account']")
-    private WebElementFacade myAccountButton;
 
     @FindBy(xpath = "//input[@id='email']")
     private WebElementFacade emailTextBox;
@@ -32,13 +29,6 @@ public class EmagLogInPage extends PageObject {
 
     @FindBy(xpath = "//input[@id='password']")
     private WebElementFacade passTextBox;
-
-    @FindBy(xpath = "//a[@class='js-logout-btn']")
-    private WebElementFacade logOutButton;
-
-    public void clickMyAccount() {
-        myAccountButton.click();
-    }
 
 
     public void enterEmail(String email) {
@@ -53,20 +43,5 @@ public class EmagLogInPage extends PageObject {
         passTextBox.type(password);
     }
 
-    public void logOut() throws MalformedURLException {
-        URL logOutLink=new URL(logOutButton.getAttribute("href"));
-    }
-
-    public void hoverMyAccount() {
-        WebDriver driver = getDriver();
-        Actions builder = new Actions(driver);
-        builder.moveToElement(myAccountButton).perform();
-        waitABit(500000);
-    }
-
-    public void clickLogOutButton() {
-
-        logOutButton.click();
-    }
 
 }
