@@ -50,6 +50,12 @@ public class EmagBasketPage extends PageObject {
     @FindBy(xpath = "(//div[@class='card-item js-product-data'])[1] //button[@class='add-to-favorites btn btn-lg btn-block gtm_xik37z hidden-list']")
     private WebElementFacade addToFavoriteButton;
 
+    @FindBy (xpath = "//div[@class='card-section-wrapper js-section-wrapper']")
+    private List<WebElementFacade> productsList;
+
+    @FindBy (xpath = "//div[@class='header-back'] //a")
+    private WebElementFacade backToSiteButton;
+
     public void clickOnSearchBox()
     {
         searchBox.click();
@@ -90,6 +96,11 @@ public class EmagBasketPage extends PageObject {
         acceptCookiesButton.click();
     }
 
+    public void clickBackToSiteButton()
+    {
+        backToSiteButton.click();
+    }
+
     public String getLabel()
     {
         return myBasketLabel.getText();
@@ -102,12 +113,14 @@ public class EmagBasketPage extends PageObject {
             i++;
         return i;
     }
-//
-//    public void priceList(String element)
-//    {
-//        String number=items.get(0).findBy(By.xpath("//p[@class='product-new-price'")).getText();
-//        int price=Integer.parseInt(number);
-//        Serenity.getCurrentSession().put(element,price);
-//    }
+
+    public void addInPriceList(String element)
+    {
+        String number=productsList.get(1).findBy(By.xpath("//p[@class='product-new-price']")).getText();
+        number=number.replace(number.substring(number.length()-6),"");
+        int price=Integer.parseInt(number);
+        Serenity.getCurrentSession().put(element,price);
+    }
+
 
 }
