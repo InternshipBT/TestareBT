@@ -1,8 +1,16 @@
 package Testare.Tests;
+<<<<<<< HEAD
 
 
 import Testare.steps.MadisonSteps.MadisonAddInBasketSteps;
 import Testare.steps.MadisonSteps.MadisonLoginSteps;
+=======
+import Testare.Credentials;
+import Testare.pages.MadisonPages;
+import Testare.steps.MadisonSteps;
+import Testare.steps.ImdbLogInGmailSteps;
+import Testare.steps.MadisonSteps;
+>>>>>>> master
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;

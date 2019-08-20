@@ -1,7 +1,14 @@
 package Testare.Tests;
+<<<<<<< HEAD
 
 import Testare.Credentials;
 import Testare.steps.AutoPracticeSteps;
+=======
+import Testare.Credentials;
+import Testare.steps.AutoPracticeSteps;
+import Testare.steps.AutoPracticeSteps;
+import Testare.steps.WizzLoginSteps;
+>>>>>>> master
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
