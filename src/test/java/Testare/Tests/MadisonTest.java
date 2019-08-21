@@ -1,9 +1,9 @@
-package Testare.features.search;
+package Testare.Tests;
 
 import Testare.Credentials;
 import Testare.pages.MadisonPages;
-import Testare.steps.serenity.ImdbLogInGmailSteps;
-import Testare.steps.serenity.MadisonSteps;
+import Testare.steps.ImdbLogInGmailSteps;
+import Testare.steps.MadisonSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Step;
