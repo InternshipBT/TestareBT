@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testare.Tests.EmagBasketTest" skipped="0" tests="1" time="35.19" timestamp="2019-08-20T10:33:05.383849+03:00[Europe/Athens]"><testcase classname="Testare.Tests.EmagBasketTest" name="Assert price list"><failure message="Price for element 2 is under then 50" type="java.lang.AssertionError">Price for element 2 is under then 50</failure><system-err>Price for element 2 is under then 50&#13;
+Testare.steps.EmagBasketSteps.assertPriceList(EmagBasketSteps.java:75)&#13;
+Testare.Tests.EmagBasketTest.assertPriceList(EmagBasketTest.java:66)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+</system-err></testcase></testsuite>

@@ -1,13 +1,17 @@
 package Testare.Tests;
 
-import Testare.Credentials;
-import Testare.pages.MadisonPages;
-import Testare.steps.ImdbLogInGmailSteps;
-import Testare.steps.MadisonSteps;
+
+
+import Testare.steps.MadisonSteps.MadisonAddInBasketSteps;
+import Testare.steps.MadisonSteps.MadisonLoginSteps;
+
+
+
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
-import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -17,17 +21,36 @@ import static Testare.Credentials.MADISON_PASSWORD;
 
 @RunWith(SerenityRunner.class)
 public class MadisonTest {
-    @Steps
-    MadisonSteps madisonSteps;
 
     @Managed(uniqueSession = true)
     public WebDriver webdriver;
 
+    @Steps
+    MadisonLoginSteps madisonLoginSteps;
+    @Steps
+    MadisonAddInBasketSteps madisonAddInBasketSteps;
+
+    @Before
+    public void openWindow() {
+        webdriver.manage().window().maximize();
+    }
+   /* @After
+    public void closeWebDriver(){
+        webdriver.manage().window().
+    }
+*/
     @Test
-    public void LoginMadison(){
-        madisonSteps.is_the_home_page();
-        madisonSteps.loginMadison(MADISON_EMAIL, MADISON_PASSWORD);
-        madisonSteps.assertsLogIn();
+    public void LoginMadison() {
+        madisonLoginSteps.is_the_home_page();
+        madisonLoginSteps.loginMadison(MADISON_EMAIL, MADISON_PASSWORD);
+        madisonLoginSteps.assertsLogIn();
     }
 
+    @Test
+    public void AddProductInCart(){
+        madisonLoginSteps.is_the_home_page();
+        madisonLoginSteps.loginMadison(MADISON_EMAIL, MADISON_PASSWORD);
+        madisonAddInBasketSteps.madisonSearch("pants");
+        madisonAddInBasketSteps.addToCartAndAssert();
+    }
 }

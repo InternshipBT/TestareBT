@@ -1,7 +1,15 @@
-package Testare.features.search;
+package Testare.Tests;
+
+
 import Testare.Credentials;
 import Testare.steps.AutoPracticeSteps;
+
+import Testare.Credentials;
+import Testare.steps.AutoPracticeSteps;
+
+import Testare.steps.AutoPracticeSteps;
 import Testare.steps.WizzLoginSteps;
+
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;

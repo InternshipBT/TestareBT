@@ -1,8 +1,8 @@
 package Testare.Tests;
 
 import Testare.Credentials;
-import Testare.steps.EmagLogInSteps;
-import Testare.steps.EmagLogOutSteps;
+
+import Testare.steps.emagSteps.EmagLogOutSteps;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.junit.runners.SerenityRunner;
@@ -30,7 +30,7 @@ public class EmagLogOutTest {
 
     @Test
     public void emagLogOut() {
-        laurentiu.is_the_home_page();
+        laurentiu.isTheHomePage();
         laurentiu.logInEmag(Credentials.EMAG_EMAIL, Credentials.EMAG_PASSWORD);
     }
 }
