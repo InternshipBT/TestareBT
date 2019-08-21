@@ -1,4 +1,5 @@
 package Testare.steps.AutoPracticeSteps;
+
 import Testare.pages.AutoPracticePage.AutoPracticeHomePage;
 import Testare.pages.AutoPracticePage.AutoPracticeLogInPage;
 import Testare.pages.AutoPracticePage.AutoPracticeStartPage;
@@ -29,15 +30,16 @@ public class AutoPracticeStartSteps {
     }
 
     @Step
-    public void assertLogIn(){
+    public void assertLogIn() {
         String actual = autoHomePage.accountMessage();
         String expected = "Welcome to your account. Here you can manage all of your personal information and orders.";
         Assert.assertEquals("User was not logged in", actual, expected);
     }
 
-@Step
-    public void searchProducts(String product){
+    @Step
+    public void searchProducts(String product) {
         autoHomePage.searchProduct(product);
         autoHomePage.pressSearchButton();
-}
+        autoHomePage.firstElement();
+    }
 }
