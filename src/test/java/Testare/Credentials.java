@@ -16,6 +16,7 @@ public class Credentials {
 
     public static final String AUTO_PRACTICE_EMAIL= "the_samoan_radu@yahoo.com";
     public static final String AUTO_PRACTICE_PASSWORD= "TestareBT1";
+    public static final String AUTO_PRACTICE_PRODUCT= "Dress";
 
 
     public static final String MADISON_EMAIL= "testarelaurentiu@gmail.com";
