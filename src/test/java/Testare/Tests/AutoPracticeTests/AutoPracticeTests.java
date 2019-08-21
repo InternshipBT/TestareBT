@@ -1,4 +1,5 @@
 package Testare.Tests.AutoPracticeTests;
+
 import Testare.Credentials;
 import Testare.steps.AutoPracticeSteps.AutoPracticeAddtoCartSteps;
 import Testare.steps.AutoPracticeSteps.AutoPracticeStartSteps;
@@ -14,9 +15,8 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 import static java.lang.Thread.sleep;
+
 @RunWith(SerenityRunner.class)
-
-
 public class AutoPracticeTests {
 
     @Managed(uniqueSession = true)
@@ -30,12 +30,12 @@ public class AutoPracticeTests {
 
 
     @Before
-  public void maximizePage() {
+    public void maximizePage() {
         webdriver.manage().window().maximize();
     }
 
     @After
-    public void closeDriver(){
+    public void closeDriver() {
         webdriver.close();
     }
 
