@@ -33,4 +33,9 @@ public class AutomationPracticeLogInSteps {
         Assert.assertEquals("Message was not the same", actual , expected);
 
     }
+
+    @Step
+    public void openPage(){
+        autprStart.open();
+    }
 }

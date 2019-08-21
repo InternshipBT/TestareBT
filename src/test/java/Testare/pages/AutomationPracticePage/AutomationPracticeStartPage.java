@@ -11,7 +11,7 @@ import net.thucydides.core.pages.PageObject;
 public class AutomationPracticeStartPage extends PageObject {
 
 
-    @FindBy(css = ".header_user_info")
+   @FindBy(css = ".header_user_info")
     private WebElementFacade logInButton;
 
 //    @FindBy(css = "#email")
