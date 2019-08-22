@@ -5,6 +5,7 @@ import Testare.pages.emagPages.EmagProductsPage;
 import Testare.pages.emagPages.EmagStartPage;
 import net.serenitybdd.core.Serenity;
 import net.thucydides.core.annotations.Step;
+import net.thucydides.core.pages.PageObject;
 import org.junit.Assert;
 
 import java.util.ArrayList;
@@ -81,27 +82,55 @@ public class EmagBasketSteps {
     }
 
     @Step
-    public void assertPriceList(String[] elements) {
+    public void assertPriceList(String[] elements, int price) {
         for (int i = 0; i < Serenity.getCurrentSession().size(); i++) {
-            Assert.assertTrue("Price for element " + i + " is under then 50",
-                    (Integer) Serenity.getCurrentSession().get(elements[i]) > 50);
+            Assert.assertTrue("Price for element " + i + " is under " + price,
+                    (Integer) Serenity.getCurrentSession().get(elements[i]) > price);
             //Assert.assertEquals("Price for element "+i+ " is different then 282", Serenity.getCurrentSession().get(elements[i]),282);
         }
     }
 
     @Step
-    public void searchElemenetAndAssertProductName(String[] elements)
-    {
+    public void searchElemenetAndAssertProductName(String[] elements) {
         resolveCookies();
-        for(String el:elements)
-        {
+        for (String el : elements) {
             searchFlow(el);
-            ArrayList<String> products=emagProductsPage.addListOfProducts();
-            for(String s:products)
-            {
-                Assert.assertTrue("The product: "+ s+ " doesn't contains ghiozdan in name",s.contains(el));
+            ArrayList<String> products = emagProductsPage.addListOfProducts();
+            for (String s : products) {
+                Assert.assertTrue("The product: " + s + " doesn't contains ghiozdan in name", s.contains(el));
             }
         }
+    }
+
+    @Step
+    public void priceElement(String el) throws InterruptedException {
+        resolveCookies();
+        searchFlow(el);
+        emagProductsPage.addInPriceList(el);
+        Thread.sleep(1000);
+    }
+
+    @Step
+    public void assertProductPrice(String el, int price) throws InterruptedException {
+        priceElement(el);
+        Assert.assertTrue("Price for element " + el + " is under " + price,
+                (Integer) Serenity.getCurrentSession().get(el) > price);
+    }
+
+    @Step
+    public void descriptionElement(String el)
+    {
+        resolveCookies();
+        searchFlow(el);
+        emagProductsPage.clickFirstElement();
+        emagProductsPage.addInDescriptionList(el);
+    }
+
+    @Step
+    public void assertDescription(String el,String description)
+    {
+        descriptionElement(el);
+        Assert.assertTrue("Describe for product: "+el+" doesn't match",Serenity.getCurrentSession().get(el).toString().contains(description));
     }
 
 }

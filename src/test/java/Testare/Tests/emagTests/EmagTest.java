@@ -6,6 +6,7 @@ import Testare.steps.emagSteps.EmagLogInSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.*;
 
+import net.thucydides.junit.annotations.Concurrent;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,6 +14,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
+@Concurrent
 public class EmagTest {
 
     @Managed(uniqueSession = true)
@@ -23,7 +25,7 @@ public class EmagTest {
     public EmagLogInSteps laurentiu1;
 
     private String[] products = { "Penar", "Stilou","Ghiozdan"};
-
+    int price=50;
     @Before
     public void maximizeWindow() {
         webdriver.manage().window().maximize();
@@ -61,7 +63,7 @@ public class EmagTest {
     public void assertPriceList() throws InterruptedException {
         laurentiu.isTheHomePage();
         laurentiu.priceList(products);
-        laurentiu.assertPriceList(products);
+        laurentiu.assertPriceList(products,price);
     }
 
     @Test

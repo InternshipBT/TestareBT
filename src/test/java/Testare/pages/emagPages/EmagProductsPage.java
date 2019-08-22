@@ -25,7 +25,7 @@ public class EmagProductsPage extends PageObject {
     @FindBy(xpath = "(//div[@class='card-item js-product-data'])[4] //button[@type='submit']")
     private WebElementFacade addInBasketFourthElButton;
 
-    @FindBy(xpath = "(//div[@class='card-item js-product-data'])[  3] //button[@type='submit']")
+    @FindBy(xpath = "(//div[@class='card-item js-product-data'])[3] //button[@type='submit']")
     private WebElementFacade addInBasketThirdElButton;
 
     @FindBy(xpath = "//i[@class='em em-close gtm_rp112818']")
@@ -33,7 +33,6 @@ public class EmagProductsPage extends PageObject {
 
     @FindBy(xpath = "//a[@class='btn btn-primary btn-sm btn-block']")
     private WebElementFacade viewYourBasketButton;
-
 
     @FindBy(xpath = "//div[@class='card-section-wrapper js-section-wrapper']")
     private List<WebElementFacade> productsList;
@@ -44,6 +43,11 @@ public class EmagProductsPage extends PageObject {
     @FindBy(className = "product-title")
     private List<WebElementFacade> productsNameList;
 
+    @FindBy(xpath = "(//h2[@class='card-body product-title-zone'])[1]")
+    private WebElementFacade firstElement;
+
+    @FindBy(className = "product-page-description-text")
+    private WebElementFacade description;
 
     public void clickAddInBasketFourthElButton() {
         addInBasketFourthElButton.click();
@@ -61,13 +65,15 @@ public class EmagProductsPage extends PageObject {
         viewYourBasketButton.click();
     }
 
-
     public void addInPriceList(String element) {
         String number = productsList.get(1).findBy(By.xpath("//p[@class='product-new-price']")).getText();
         number = number.replace(number.substring(number.length() - 6), "");
+//        number = number.replace(" lei", "");
+        number = number.replace(".", "");
         int price = Integer.parseInt(number);
         Serenity.getCurrentSession().put(element, price);
     }
+
 
     public ArrayList<String> addListOfProducts() {
         ArrayList<String> products = new ArrayList<>();
@@ -79,5 +85,21 @@ public class EmagProductsPage extends PageObject {
                 break;
         }
         return products;
+    }
+
+    public void clickFirstElement() {
+        firstElement.click();
+    }
+
+    public String returnDescription() {
+        return description.getText();
+    }
+
+
+    public void addInDescriptionList(String element) {
+        String description = returnDescription();
+        System.out.println(description);
+        Serenity.getCurrentSession().put(element, description);
+
     }
 }
