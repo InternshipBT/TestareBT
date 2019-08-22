@@ -17,4 +17,19 @@ public class ShoppingCartPage extends PageObject {
     public WebElementFacade itemTitle(){
         return itemTitle;
     }
+
+    @FindBy  (css="#short_description_content")
+    private WebElementFacade itemDescription;
+
+    public WebElementFacade itemDescription(){
+        return itemDescription;
+    }
+
+    @FindBy (css=".our_price_display")
+    private  WebElementFacade itemPrice;
+
+    public WebElementFacade itemPrice(){
+        return itemPrice;
+    }
+
 }

@@ -1,4 +1,4 @@
-package Testare.Tests;
+package Testare.Tests.AutomationPracticeTest;
 
 
 import Testare.Credentials;
@@ -10,6 +10,7 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
+import net.thucydides.junit.annotations.Concurrent;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,6 +18,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
+@Concurrent
 public class AutomationPracticeTest {
 
     @Managed(uniqueSession = true)
