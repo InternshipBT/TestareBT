@@ -1,12 +1,9 @@
 package Testare.pages.MadisonSitePages;
 
-import net.thucydides.core.annotations.DefaultUrl;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.thucydides.core.pages.PageObject;
-
 import java.util.List;
-
 
 public class ResultsPage extends PageObject {
 

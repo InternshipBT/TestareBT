@@ -1,18 +1,11 @@
-package Testare.Tests;
-
-
-
+package Testare.Tests.TeoTests;
 
 import Testare.steps.MadisonSteps.MadisonAddInBasketSteps;
 import Testare.steps.MadisonSteps.MadisonLoginSteps;
-
-
-
-
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
-import org.junit.After;
+import net.thucydides.junit.annotations.Concurrent;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,6 +15,7 @@ import static Testare.Credentials.MADISON_EMAIL;
 import static Testare.Credentials.MADISON_PASSWORD;
 
 @RunWith(SerenityRunner.class)
+@Concurrent
 public class MadisonTest {
 
     @Managed(uniqueSession = true)
@@ -36,21 +30,17 @@ public class MadisonTest {
     public void openWindow() {
         webdriver.manage().window().maximize();
     }
-   /* @After
-    public void closeWebDriver(){
-        webdriver.manage().window().
-    }
-*/
+
     @Test
     public void LoginMadison() {
-        madisonLoginSteps.is_the_home_page();
+        madisonLoginSteps.openPageMadison();
         madisonLoginSteps.loginMadison(MADISON_EMAIL, MADISON_PASSWORD);
         madisonLoginSteps.assertsLogIn();
     }
 
     @Test
-    public void AddProductInCart(){
-        madisonLoginSteps.is_the_home_page();
+    public void AddProductInCart() {
+        madisonLoginSteps.openPageMadison();
         madisonLoginSteps.loginMadison(MADISON_EMAIL, MADISON_PASSWORD);
         madisonAddInBasketSteps.madisonSearch("pants");
         madisonAddInBasketSteps.addToCartAndAssert();

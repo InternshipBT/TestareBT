@@ -21,9 +21,9 @@ public class MadisonAddInBasketSteps {
         madisonHomePage.enterTextInSearchBar(textToIntroduce);
         madisonHomePage.searchElementIntroduced();
         resultsPage.clickOnProduct();
-        productPage.productColor();
-        productPage.productSize();
-        productPage.addButton();
+        //productPage.productColor();
+        //productPage.productSize();
+        //productPage.addButton();
     }
 
 
@@ -34,7 +34,7 @@ public class MadisonAddInBasketSteps {
 
     @Step
     public void getTitleFromItem(WebElementFacade item) {
-        System.out.println(item);
+        System.out.println(item+ "drfg");
         System.out.println(item.getText());
         //String title = item.findElement(By.className("product-name")).toString();
         String title = item.getText();
@@ -50,7 +50,24 @@ public class MadisonAddInBasketSteps {
         System.out.println(expected);
 
         Assert.assertEquals("This is not the log in page.", actual, expected.toLowerCase());
+    }
 
+    @Step
+    public void assertDescriptionProduct(String expectedResult){
+        String actual = shoppingCartPage.getDescriptionItem().getText();
+
+        System.out.println(actual + expectedResult);
+
+        Assert.assertEquals("Doesn't match :(", expectedResult, actual);
+    }
+
+    @Step
+    public void assertPriceProduct(String expectedPrice){
+        String actual = shoppingCartPage.getPriceItem().getText();
+
+        System.out.println(actual + expectedPrice);
+
+        Assert.assertTrue("Doeesn't contain..", actual.contains(expectedPrice));
     }
 
     @StepGroup

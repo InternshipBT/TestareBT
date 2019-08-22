@@ -14,7 +14,7 @@ public class MadisonLoginSteps {
 
 
     @Step
-    public void is_the_home_page() {
+    public void openPageMadison() {
 
         startPage.open();
 
