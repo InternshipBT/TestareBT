@@ -18,10 +18,16 @@ public class AutomationPracticeHomePage extends PageObject{
     @FindBy(css=".btn.btn-default.button-search")
     private WebElementFacade searchButotn;
 
+    @FindBy(xpath = "(//div[@class='product-image-container'])")
+    private WebElementFacade clickOnItem;
+
+
     public void searchItem(String item){
         searchField.click();
+        searchField.clear();
         searchField.type(item);
         searchButotn.click();
+        clickOnItem.click();
     }
 
 

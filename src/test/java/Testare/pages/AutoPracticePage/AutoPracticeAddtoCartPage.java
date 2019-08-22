@@ -29,15 +29,29 @@ public class AutoPracticeAddtoCartPage extends PageObject {
 
 
 
+    @FindBy(id = "short_description_content")
+    private WebElementFacade description;
+
+
+
+    @FindBy(id = "our_price_display")
+    private WebElementFacade price;
+
     @FindBy(css = ".btn.btn-default.button.button-medium")
     private WebElementFacade proceedToCheckout;
 
+    public WebElementFacade returnDescription(){
+        return description;
+    }
+    public WebElementFacade returnPrice(){
+        return price;
+    }
 
     public List<WebElementFacade> getAllItmes() {
         return products;
     }
 
-    public void selectFirstItem(){
+    public void selectFirstItem() {
         firstProduct.click();
     }
 
@@ -47,9 +61,12 @@ public class AutoPracticeAddtoCartPage extends PageObject {
         waitFor(addToCartButton);
         addToCartButton.click();
     }
-    public void openCart(){
+
+    public void openCart() {
         proceedToCheckout.click();
     }
+
+
 
 
 }

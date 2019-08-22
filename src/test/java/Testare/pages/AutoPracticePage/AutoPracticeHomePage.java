@@ -21,7 +21,8 @@ public class AutoPracticeHomePage extends PageObject {
     @FindBy(css = "#search_query_top")
     private WebElementFacade searchField;
 
-
+    @FindBy(xpath = "(//div[@class='product-image-container'])")
+    private WebElementFacade selectFirstElement;
 
     @FindBy(css = ".btn.btn-default.button-search")
     private WebElementFacade searchButton;
@@ -35,6 +36,11 @@ public class AutoPracticeHomePage extends PageObject {
         searchField.click();
         searchField.sendKeys(keyword);
     }
+
+    public void firstElement(){
+        selectFirstElement.click();
+    }
+
 
     public void pressSearchButton(){
         searchButton.click();

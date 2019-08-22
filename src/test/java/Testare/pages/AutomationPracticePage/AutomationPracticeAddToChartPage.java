@@ -25,7 +25,6 @@ public class AutomationPracticeAddToChartPage extends PageObject {
     private WebElementFacade addToCartConfirm;
 
 
-
     public void addItemToCart() {
         itemSelecion.click();
         addToCart.click();

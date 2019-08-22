@@ -21,7 +21,7 @@ public class AutomationPracticeAddToCartSteps {
     public void autPracticeAddItemsToCart(String item) {
 
         autprHome.searchItem(item);
-        autprAddPage.addItemToCart();
+        //autprAddPage.addItemToCart();
     }
 
     @Step
@@ -45,7 +45,26 @@ public class AutomationPracticeAddToCartSteps {
     @StepGroup
     public void grupOfSteps() {
         getTitleFromItem(cartPage.itemTitle());
-        //getFirstItem();
+        getFirstItem();
         assertSearch();
     }
+
+
+    @Step
+    public void assertDescription(String expected) {
+        String actual = cartPage.itemDescription().getText().toLowerCase();
+        //String expected =   cartPage.itemTitle().getText().toLowerCase();
+        Assert.assertEquals("Not the same", actual, expected.toLowerCase());
+    }
+
+
+    @Step
+    public void assertPrice(String expected) {
+        String actual = cartPage.itemPrice().getText().toLowerCase();
+        //String expected =   cartPage.itemTitle().getText().toLowerCase();
+        Assert.assertTrue("Not the same", actual.contains(expected));
+    }
+
 }
+
+

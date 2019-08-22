@@ -8,6 +8,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 
+import net.thucydides.junit.annotations.Concurrent;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,6 +18,7 @@ import org.openqa.selenium.WebDriver;
 import static java.lang.Thread.sleep;
 
 @RunWith(SerenityRunner.class)
+@Concurrent
 public class AutoPracticeTests {
 
     @Managed(uniqueSession = true)
