@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testare.features.search.EmagBasketTest" skipped="0" tests="1" time="38.29" timestamp="2019-08-19T14:45:52.624007800+03:00[Europe/Athens]"><testcase classname="Testare.features.search.EmagBasketTest" name="Assert validate basket"><failure message="Your basket is empty" type="java.lang.AssertionError">Your basket is empty</failure><system-err>Your basket is empty&#13;
-Testare.steps.serenity.EmagBasketSteps.assertListSize(EmagBasketSteps.java:44)&#13;
-Testare.features.search.EmagBasketTest.assertValidateBasket(EmagBasketTest.java:48)&#13;
-java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
-java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
-</system-err></testcase></testsuite>

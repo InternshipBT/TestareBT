@@ -16,16 +16,21 @@ public class ResultsPage extends PageObject {
     @FindBy(xpath = "//li[@class='item last'][1]")
     private WebElementFacade findProduct;
 
-    @FindBy(className = "col-main")
+    @FindBy(css = ".product-info .product-name")
     private List<WebElementFacade> items;
 
     @FindBy(className = "product-name")
     private List<WebElementFacade> productsNameList;
-//
-//    @FindBy(xpath="//select[@title='Sort By']")
-//    private WebElementFacade dropDownList;
 
-    Select dropDownList=new Select (getDriver().findElement(By.xpath("//select[@title='Sort By']")));
+    @FindBy(xpath="//select[@title='Sort By']")
+    private WebElementFacade dropDownList;
+
+    @FindBy(xpath = "//select[@title='Sort By'] //option[2]")
+    private WebElementFacade sortByName;
+
+
+    @FindBy(css = ".note-msg")
+    private WebElementFacade errMesage;
 
     public void clickOnProduct() {
         findProduct.click();
@@ -47,6 +52,11 @@ public class ResultsPage extends PageObject {
 
     public void selectSortByName()
     {
-        dropDownList.selectByVisibleText("Name");
+        dropDownList.click();
+        sortByName.click();
+    }
+
+    public String getErrMesage() {
+        return errMesage.getText();
     }
 }
