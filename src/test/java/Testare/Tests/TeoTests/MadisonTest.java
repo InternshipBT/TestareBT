@@ -45,4 +45,20 @@ public class MadisonTest {
         madisonAddInBasketSteps.madisonSearch("pants");
         madisonAddInBasketSteps.addToCartAndAssert();
     }
+
+    @Test
+    public void getProductsNameSortedList()
+    {
+        madisonLoginSteps.openPageMadison();
+        madisonAddInBasketSteps.madisonSearch("shirt");
+        madisonAddInBasketSteps.sortProductsNameList();
+    }
+
+    @Test
+    public void getSortedProductsNameList()
+    {
+        madisonLoginSteps.openPageMadison();
+        madisonAddInBasketSteps.madisonSearch("shirt");
+        madisonAddInBasketSteps.getSortedProductsNameList();
+    }
 }

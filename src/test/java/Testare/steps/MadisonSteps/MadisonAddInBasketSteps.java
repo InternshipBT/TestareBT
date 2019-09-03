@@ -9,6 +9,9 @@ import net.thucydides.core.annotations.StepGroup;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class MadisonAddInBasketSteps {
 
     MadisonHomePage madisonHomePage;
@@ -75,6 +78,30 @@ public class MadisonAddInBasketSteps {
         getFirstTitle();
         getTitleFromItem(shoppingCartPage.getTitleItem());
         assertProductTitle();
+    }
+
+    @Step
+    public ArrayList<String> sortProductsNameList()
+    {
+        ArrayList<String> productsName=resultsPage.getProductsName();
+        Collections.sort(productsName);
+        for(String s:productsName)
+        {
+            System.out.println(s);
+        }
+        return productsName;
+    }
+
+    @Step
+    public ArrayList<String> getSortedProductsNameList()
+    {
+        resultsPage.selectSortByName();
+        ArrayList<String> productsName=resultsPage.getProductsName();
+        for(String s:productsName)
+        {
+            System.out.println(s);
+        }
+        return productsName;
     }
 
 }
