@@ -17,11 +17,18 @@ import org.openqa.selenium.interactions.MoveMouseAction;
 
 import javax.swing.text.html.HTML;
 import java.util.List;
+
+@DefaultUrl("https://www.emag.ro/")
 public class EmagHomePage extends PageObject{
 
     @FindBy(xpath = "//a[@class='js-logout-btn']")
     private WebElementFacade logOutButton;
 
+    @FindBy(xpath = "//a[@id='emg-user-menu']")
+    private WebElementFacade userButton;
+
+    @FindBy(xpath = "//p[@class='name']")
+    private WebElementFacade userLabel;
 
     public void logOut() throws MalformedURLException {
         URL logOutLink=new URL(logOutButton.getAttribute("href"));
@@ -32,5 +39,14 @@ public class EmagHomePage extends PageObject{
         logOutButton.click();
     }
 
+    public void clickUserButton()
+    {
+        userButton.click();
+    }
+
+    public String getLabel()
+    {
+        return userLabel.getText();
+    }
 
 }

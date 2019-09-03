@@ -9,6 +9,7 @@ import net.thucydides.core.annotations.*;
 import net.thucydides.junit.annotations.Concurrent;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -22,9 +23,13 @@ public class EmagTest {
 
     @Steps
     public EmagBasketSteps laurentiu;
+
+    @Steps
     public EmagLogInSteps laurentiu1;
 
     private String[] products = { "Penar", "Stilou","Ghiozdan"};
+    private String product="blablabla";
+    private String productError="**********";
     int price=50;
     @Before
     public void maximizeWindow() {
@@ -36,6 +41,27 @@ public class EmagTest {
     public void emagLogIn() throws InterruptedException {
         laurentiu.isTheHomePage();
         laurentiu1.loginEmag(Credentials.EMAG_EMAIL,Credentials.EMAG_PASSWORD);
+    }
+
+    @Test
+    public void emagLogInPositiveTest() throws InterruptedException {
+        laurentiu.isTheHomePage();
+        laurentiu1.loginEmag(Credentials.EMAG_EMAIL,Credentials.EMAG_PASSWORD);
+        laurentiu1.assertLogInPositive("Test");
+    }
+
+    @Test
+    public void emagLogInEmailNegativeTest()
+    {
+        laurentiu.isTheHomePage();
+        laurentiu1.assertLogInEmailNegative("email");
+    }
+
+    @Test
+    public void emagLogInPasswordNegativeTest()
+    {
+        laurentiu.isTheHomePage();
+        laurentiu1.assertLogInPasswordNegative(Credentials.EMAG_EMAIL,"parola");
     }
 
     @Test
@@ -58,6 +84,19 @@ public class EmagTest {
         laurentiu.assertListSize();
     }
 
+    @Test
+    public void assertValidateThirdElToBasket() throws InterruptedException {
+        laurentiu.isTheHomePage();
+        laurentiu.addThirdItemToBasket("fifa");
+        laurentiu.assertListSize();
+    }
+
+    @Test
+    public void assertValidateEmptyBasket() throws InterruptedException {
+        laurentiu.isTheHomePage();
+        laurentiu.assertRemoveElementToBasket("fifa");
+    }
+
 
     @Test
     public void assertPriceList() throws InterruptedException {
@@ -70,6 +109,20 @@ public class EmagTest {
     public void assertNameOfProducts() {
         laurentiu.isTheHomePage();
         laurentiu.searchElemenetAndAssertProductName(products);
+    }
+
+    @Test
+    public void assertNameOfProductsNegative()
+    {
+        laurentiu.isTheHomePage();
+        laurentiu.searchElemenetAndAssertProductNameNegative(product);
+    }
+
+    @Test
+    public void assertNameOfProductsSpecialCharNegative()
+    {
+        laurentiu.isTheHomePage();
+        laurentiu.searchElemenetAndAssertProductNameNegative2(productError);
     }
 
 }

@@ -35,7 +35,7 @@ public class EmagBasketSteps {
 
     @Step
     public void resolveCookies() {
-        emagStartPage.clickBackToSiteButton();
+        // emagStartPage.clickBackToSiteButton();
         emagStartPage.clickOnAcceptCookiesButton();
     }
 
@@ -51,6 +51,26 @@ public class EmagBasketSteps {
     }
 
     @Step
+    public void addThirdItemToBasket(String element) throws InterruptedException {
+        resolveCookies();
+        searchFlow(element);
+        emagProductsPage.clickAddInBasketThirdElButton();
+        Thread.sleep(2000);
+        emagProductsPage.clickOnViewYourBasketButton();
+    }
+
+    @Step
+    public void assertRemoveElementToBasket(String element) throws InterruptedException {
+        resolveCookies();
+        searchFlow(element);
+        emagProductsPage.clickAddInBasketThirdElButton();
+        Thread.sleep(2000);
+        emagProductsPage.clickOnViewYourBasketButton();
+        emagBasketPage.clickRemoveElement();
+        Assert.assertEquals(emagBasketPage.getEmptyCartLabel(),"Cosul tau este gol");
+    }
+
+    @Step
     public void assertMyBasket(String element) {
         Assert.assertEquals("Expected result is not equal with actual result", emagBasketPage.getLabel(), element);
     }
@@ -59,6 +79,7 @@ public class EmagBasketSteps {
     public void assertListSize() {
         Assert.assertTrue("Your basket is empty", emagBasketPage.getListSize() > 0);
     }
+
 
     @Step
     public void priceList(String[] elements) throws InterruptedException {
@@ -97,10 +118,25 @@ public class EmagBasketSteps {
             searchFlow(el);
             ArrayList<String> products = emagProductsPage.addListOfProducts();
             for (String s : products) {
-                Assert.assertTrue("The product: " + s + " doesn't contains ghiozdan in name", s.contains(el));
+                Assert.assertTrue("The product: " + s + " doesn't contains " + el + " in name", s.contains(el));
             }
         }
     }
+
+    @Step
+    public void searchElemenetAndAssertProductNameNegative(String element) {
+        resolveCookies();
+        searchFlow(element);
+        Assert.assertNotNull(emagProductsPage.returnErrorLabel());
+    }
+
+    @Step
+    public void searchElemenetAndAssertProductNameNegative2(String element) {
+        resolveCookies();
+        searchFlow(element);
+        Assert.assertEquals(emagProductsPage.returnErrorLabel(), emagProductsPage.returnErrorLabel(), element);
+    }
+
 
     @Step
     public void priceElement(String el) throws InterruptedException {
@@ -118,8 +154,7 @@ public class EmagBasketSteps {
     }
 
     @Step
-    public void descriptionElement(String el)
-    {
+    public void descriptionElement(String el) {
         resolveCookies();
         searchFlow(el);
         emagProductsPage.clickFirstElement();
@@ -127,10 +162,9 @@ public class EmagBasketSteps {
     }
 
     @Step
-    public void assertDescription(String el,String description)
-    {
+    public void assertDescription(String el, String description) {
         descriptionElement(el);
-        Assert.assertTrue("Describe for product: "+el+" doesn't match",Serenity.getCurrentSession().get(el).toString().contains(description));
+        Assert.assertTrue("Describe for product: " + el + " doesn't match", Serenity.getCurrentSession().get(el).toString().contains(description));
     }
 
 }

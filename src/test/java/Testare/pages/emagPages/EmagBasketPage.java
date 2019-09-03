@@ -26,6 +26,21 @@ public class EmagBasketPage extends PageObject {
     @FindBy (xpath = "//div[@class='cart-widget cart-line']")
     private List<WebElementFacade> items;
 
+    @FindBy(xpath = "//a[@class='emg-right remove-product btn-remove-product gtm_rp080219']")
+    private WebElementFacade removeElement;
+
+    @FindBy(xpath = "//*[@id=\"empty-cart\"]/div[1]")
+    private WebElementFacade emptyCartLabel;
+
+    public String getEmptyCartLabel()
+    {
+        return emptyCartLabel.getText();
+    }
+
+    public void clickRemoveElement()
+    {
+        removeElement.click();
+    }
 
     public String getLabel()
     {

@@ -31,7 +31,7 @@ public class EmagProductsPage extends PageObject {
     @FindBy(xpath = "//i[@class='em em-close gtm_rp112818']")
     private WebElementFacade closePopUpButton;
 
-    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm btn-block']")
+    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm btn-block gtm_680klw']")
     private WebElementFacade viewYourBasketButton;
 
     @FindBy(xpath = "//div[@class='card-section-wrapper js-section-wrapper']")
@@ -48,6 +48,9 @@ public class EmagProductsPage extends PageObject {
 
     @FindBy(className = "product-page-description-text")
     private WebElementFacade description;
+
+    @FindBy(xpath = "//h1[@class='listing-grid-title js-head-title pad-btm-xs h4']")
+    private WebElementFacade productDoesntExist;
 
     public void clickAddInBasketFourthElButton() {
         addInBasketFourthElButton.click();
@@ -100,6 +103,10 @@ public class EmagProductsPage extends PageObject {
         String description = returnDescription();
         System.out.println(description);
         Serenity.getCurrentSession().put(element, description);
+    }
 
+    public String returnErrorLabel()
+    {
+        return productDoesntExist.getText();
     }
 }

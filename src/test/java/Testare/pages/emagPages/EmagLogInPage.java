@@ -19,6 +19,7 @@ import javax.swing.text.html.HTML;
 import java.util.List;
 
 
+@DefaultUrl("https://www.emag.ro/")
 public class EmagLogInPage extends PageObject {
 
     @FindBy(xpath = "//input[@id='email']")
@@ -29,6 +30,12 @@ public class EmagLogInPage extends PageObject {
 
     @FindBy(xpath = "//input[@id='password']")
     private WebElementFacade passTextBox;
+
+    @FindBy(xpath = "/html/body/form/div[1]/div/div/span[2]")
+    private WebElementFacade emailErrorText;
+
+    @FindBy(xpath = "/html/body/form/div[3]/div[3]/div/span")
+    private WebElementFacade passwordErrorText;
 
 
     public void enterEmail(String email) {
@@ -41,6 +48,15 @@ public class EmagLogInPage extends PageObject {
 
     public void enterPass(String password) {
         passTextBox.type(password);
+    }
+
+    public String getEmailError() {
+        return emailErrorText.getText();
+    }
+
+    public String getPasswordError() {
+        return passwordErrorText.getText();
+
     }
 
 
