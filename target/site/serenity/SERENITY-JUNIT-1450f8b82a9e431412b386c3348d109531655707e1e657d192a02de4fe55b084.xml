@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Tests.AutomationPracticeTest" skipped="0" tests="1" time="15.45" timestamp="2019-08-19T14:49:28.721468600+03:00[Europe/Athens]"><testcase classname="Tests.AutomationPracticeTest" name="Log  in  on  automation practice"><failure message="Message was not the same expected:&lt;Test BancaTransil[va]nia&gt; but was:&lt;Test BancaTransil[]nia&gt;" type="org.junit.ComparisonFailure">Message was not the same expected:&lt;Test BancaTransil[va]nia&gt; but was:&lt;Test BancaTransil[]nia&gt;</failure><system-err>Message was not the same expected:&lt;Test BancaTransil[va]nia&gt; but was:&lt;Test BancaTransil[]nia&gt;&#13;
-Testare.steps.AutomationPracticeSteps.asert_login(AutomationPracticeSteps.java:28)&#13;
-Tests.AutomationPracticeTest.Log_In_On_AutomationPractice(AutomationPracticeTest.java:29)&#13;
-java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
-java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
-</system-err></testcase></testsuite>

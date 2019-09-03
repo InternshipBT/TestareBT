@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testare.features.search.ImdbLogInGmailTest" skipped="0" tests="1" time="23.7" timestamp="2019-08-14T15:16:12.974943100+03:00[Europe/Athens]"><testcase classname="Testare.features.search.ImdbLogInGmailTest" name="Log in imdb g mail"/></testsuite>
-=======
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testare.features.search.ImdbLogInGmailTest" skipped="0" tests="1" time="25.66" timestamp="2019-08-14T15:15:25.540589600+03:00[Europe/Athens]"><testcase classname="Testare.features.search.ImdbLogInGmailTest" name="Log in imdb g mail"/></testsuite>
->>>>>>> master

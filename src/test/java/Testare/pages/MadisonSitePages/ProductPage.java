@@ -15,6 +15,9 @@ public class ProductPage extends PageObject {
     @FindBy(xpath = "//div[@class='add-to-cart-buttons'] //button[@title='Add to Cart']")
     private WebElementFacade addInCartButton;
 
+    @FindBy(css = ".product-name .h1")
+    private WebElementFacade titleProduct;
+
     public void productColor(){
         colorOfTheProduct.click();
     }
@@ -26,4 +29,6 @@ public class ProductPage extends PageObject {
     public void addButton(){
         addInCartButton.click();
     }
+
+    public String getProductTitle(){ return titleProduct.getText(); }
 }

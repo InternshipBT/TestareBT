@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testare.features.search.EmagBasketTest" skipped="0" tests="1" time="38.96" timestamp="2019-08-19T14:32:58.736889100+03:00[Europe/Athens]"><testcase classname="Testare.features.search.EmagBasketTest" name="Assert validate label"><failure message="Expected result is equal with actual result expected:&lt;Cosul [ta]u&gt; but was:&lt;Cosul [me]u&gt;" type="org.junit.ComparisonFailure">Expected result is equal with actual result expected:&lt;Cosul [ta]u&gt; but was:&lt;Cosul [me]u&gt;</failure><system-err>Expected result is equal with actual result expected:&lt;Cosul [ta]u&gt; but was:&lt;Cosul [me]u&gt;&#13;
-Testare.steps.serenity.EmagBasketSteps.assertMyBasket(EmagBasketSteps.java:38)&#13;
-Testare.features.search.EmagBasketTest.assertValidateLabel(EmagBasketTest.java:40)&#13;
-java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
-java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
-java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
-</system-err></testcase></testsuite>

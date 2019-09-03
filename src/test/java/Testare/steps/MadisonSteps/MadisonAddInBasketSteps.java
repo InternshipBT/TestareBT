@@ -15,15 +15,19 @@ public class MadisonAddInBasketSteps {
     ResultsPage resultsPage;
     ProductPage productPage;
     ShoppingCartPage shoppingCartPage;
+    CartMaddison cartMaddison;
 
     @Step
-    public void madisonSearch(String textToIntroduce) {
+    public void madisonSearchAndClick(String textToIntroduce) {
         madisonHomePage.enterTextInSearchBar(textToIntroduce);
         madisonHomePage.searchElementIntroduced();
         resultsPage.clickOnProduct();
-        //productPage.productColor();
-        //productPage.productSize();
-        //productPage.addButton();
+    }
+
+    @Step
+    public void searchProduct(String titleProduct) {
+        madisonHomePage.enterTextInSearchBar(titleProduct);
+        madisonHomePage.searchElementIntroduced();
     }
 
 
@@ -34,7 +38,7 @@ public class MadisonAddInBasketSteps {
 
     @Step
     public void getTitleFromItem(WebElementFacade item) {
-        System.out.println(item+ "drfg");
+        System.out.println(item + "drfg");
         System.out.println(item.getText());
         //String title = item.findElement(By.className("product-name")).toString();
         String title = item.getText();
@@ -53,7 +57,7 @@ public class MadisonAddInBasketSteps {
     }
 
     @Step
-    public void assertDescriptionProduct(String expectedResult){
+    public void assertDescriptionProduct(String expectedResult) {
         String actual = shoppingCartPage.getDescriptionItem().getText();
 
         System.out.println(actual + expectedResult);
@@ -62,7 +66,7 @@ public class MadisonAddInBasketSteps {
     }
 
     @Step
-    public void assertPriceProduct(String expectedPrice){
+    public void assertPriceProduct(String expectedPrice) {
         String actual = shoppingCartPage.getPriceItem().getText();
 
         System.out.println(actual + expectedPrice);
@@ -70,11 +74,61 @@ public class MadisonAddInBasketSteps {
         Assert.assertTrue("Doeesn't contain..", actual.contains(expectedPrice));
     }
 
+    @Step
+    public void assertProductTitleWithSearch(String searchedElement) {
+        String productTitle = resultsPage.getAllItems().get(0).getText().toLowerCase();
+        System.out.println(productTitle);
+        Assert.assertTrue("The search is not valid.", productTitle.contains(searchedElement));
+    }
+
+    @Step
+    public void assertProductNotFound() {
+        String errMessage = resultsPage.getErrMesage();
+        String expected = "Your search returns no results.";
+        System.out.println(errMessage);
+        Assert.assertEquals("Message not displayed", errMessage, expected);
+    }
+
+    @Step
+    public void assertTitleProdInCart(String titleProd) {
+
+        String titleProdChart = cartMaddison.getTitleFromCart().toLowerCase();
+        System.out.println(titleProd);
+        System.out.println(titleProdChart);
+        Assert.assertTrue("Doesn't coincide.", titleProdChart.contains(titleProd));
+    }
+
+    @Step
+    public void assertDeleteInCart() {
+        String messageFromCart = cartMaddison.messgInCart().toLowerCase();
+        String expectedMessage = "SHOPPING CART IS EMPTY";
+        Assert.assertEquals("Message not shown.", expectedMessage.toLowerCase(), messageFromCart);
+    }
+
     @StepGroup
     public void addToCartAndAssert() {
+
+        productPage.productColor();
+        productPage.productSize();
+        String title = productPage.getProductTitle().toLowerCase();
+        productPage.addButton();
+        assertTitleProdInCart(title);
+    }
+
+    @StepGroup
+    public void addToCart() {
+
+        productPage.productColor();
+        productPage.productSize();
+        productPage.addButton();
+        cartMaddison.clickDeleteProd();
+
+    }
+
+    @StepGroup
+    public void searchAssert() {
         getFirstTitle();
-        getTitleFromItem(shoppingCartPage.getTitleItem());
-        assertProductTitle();
+        assertProductTitleWithSearch("glasses");
     }
 
 }

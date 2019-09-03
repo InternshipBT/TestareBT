@@ -18,10 +18,13 @@ public class ShoppingCartPage extends PageObject{
     public WebElementFacade getTitleItem(){
         return productName;
     }
+
     public WebElementFacade getDescriptionItem(){
         return productDescription;
     }
     public WebElementFacade getPriceItem(){
         return productPrice;
     }
+
+
 }
