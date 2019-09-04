@@ -10,10 +10,16 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 
 import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 
 public class MadisonAddInBasketSteps {
 
@@ -88,6 +94,11 @@ public class MadisonAddInBasketSteps {
     }
 
     @Step
+    public void selectPriceFromDropdown() {
+        resultsPage.selectPrice();
+    }
+
+    @Step
     public void assertProductNotFound() {
         String errMessage = resultsPage.getErrMesage();
         String expected = "Your search returns no results.";
@@ -112,8 +123,9 @@ public class MadisonAddInBasketSteps {
     }
 
     @Step
+
     public void sortDescendingPriceList() {
-        List<WebElementFacade> listPricesUnordered = resultsPage.getAllPrices();
+        List<WebElementFacade> listPricesUnordered = resultsPage.getAllPricesForDescending();
         List<String> listPrice = new ArrayList<>();
 
     /*  List<String> sortedList = resultsPage.getAllPrices()
@@ -135,7 +147,7 @@ public class MadisonAddInBasketSteps {
     @Step
     public void assertPriceListDesc() {
         List<String> expectedDesc = (List<String>) Serenity.getCurrentSession().get("descPriceList");
-        List<WebElementFacade> actualDesc = resultsPage.getAllPrices();
+        List<WebElementFacade> actualDesc = resultsPage.getAllPricesForDescending();
         List<String> actualDescList = new ArrayList<>();
 
         for (WebElementFacade el : actualDesc) {
@@ -146,6 +158,20 @@ public class MadisonAddInBasketSteps {
         Assert.assertEquals("Don't match.", expectedDesc, actualDescList);
     }
 
+
+    public void sortAscendingPriceList() {
+        List<String> ascendingUnsortedList = resultsPage.getAllPrices();
+        Collections.sort(ascendingUnsortedList);
+        Serenity.getCurrentSession().put("ascPriceList", ascendingUnsortedList);
+    }
+
+    @Step
+    public void assertPriceAscending() {
+        List<String> expectedAsc = (List<String>) Serenity.getCurrentSession().get("ascPriceList");
+        List<String> actualAsc = resultsPage.getAllPrices();
+        System.out.println("expected .....AA");
+        Assert.assertEquals("The lists are not the same", expectedAsc, actualAsc);
+    }
 
 
     @StepGroup

@@ -6,7 +6,7 @@ import net.thucydides.core.pages.PageObject;
 
 public class ProductPage extends PageObject {
 
-    @FindBy(css ="#option25")
+    @FindBy(css = "#option25")
     private WebElementFacade colorOfTheProduct;
 
     @FindBy(css = "#option65")
@@ -18,17 +18,20 @@ public class ProductPage extends PageObject {
     @FindBy(css = ".product-name .h1")
     private WebElementFacade titleProduct;
 
-    public void productColor(){
+
+    public void productColor() {
         colorOfTheProduct.click();
     }
 
-    public void productSize(){
+    public void productSize() {
         sizeProduct.click();
     }
 
-    public void addButton(){
+    public void addButton() {
         addInCartButton.click();
     }
 
-    public String getProductTitle(){ return titleProduct.getText(); }
+    public String getProductTitle() {
+        return titleProduct.getText();
+    }
 }

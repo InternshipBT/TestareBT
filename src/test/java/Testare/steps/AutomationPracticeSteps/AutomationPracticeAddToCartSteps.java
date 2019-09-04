@@ -65,6 +65,7 @@ public class AutomationPracticeAddToCartSteps {
         Assert.assertTrue("Not the same", actual.contains(expected));
     }
 
+
 }
 
 
