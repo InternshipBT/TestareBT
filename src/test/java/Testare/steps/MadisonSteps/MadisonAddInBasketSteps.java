@@ -9,6 +9,12 @@ import net.thucydides.core.annotations.StepGroup;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class MadisonAddInBasketSteps {
 
     MadisonHomePage madisonHomePage;
@@ -105,9 +111,45 @@ public class MadisonAddInBasketSteps {
         Assert.assertEquals("Message not shown.", expectedMessage.toLowerCase(), messageFromCart);
     }
 
+    @Step
+    public void sortDescendingPriceList() {
+        List<WebElementFacade> listPricesUnordered = resultsPage.getAllPrices();
+        List<String> listPrice = new ArrayList<>();
+
+    /*  List<String> sortedList = resultsPage.getAllPrices()
+                .stream()
+                .map(WebElementFacade::getText)
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());*/
+
+        for (WebElementFacade var : listPricesUnordered) {
+            String price = var.getText();
+            listPrice.add(price);
+        }
+
+        Collections.sort(listPrice, Collections.reverseOrder());
+        System.out.println(listPrice);
+        Serenity.getCurrentSession().put("descPriceList", listPrice);
+    }
+
+    @Step
+    public void assertPriceListDesc() {
+        List<String> expectedDesc = (List<String>) Serenity.getCurrentSession().get("descPriceList");
+        List<WebElementFacade> actualDesc = resultsPage.getAllPrices();
+        List<String> actualDescList = new ArrayList<>();
+
+        for (WebElementFacade el : actualDesc) {
+            String price = el.getText();
+            actualDescList.add(price);
+        }
+
+        Assert.assertEquals("Don't match.", expectedDesc, actualDescList);
+    }
+
+
+
     @StepGroup
     public void addToCartAndAssert() {
-
         productPage.productColor();
         productPage.productSize();
         String title = productPage.getProductTitle().toLowerCase();
@@ -129,6 +171,14 @@ public class MadisonAddInBasketSteps {
     public void searchAssert() {
         getFirstTitle();
         assertProductTitleWithSearch("glasses");
+    }
+
+    @StepGroup
+    public void assertListPricesDesc() {
+        sortDescendingPriceList();
+        resultsPage.selectPrice();
+        resultsPage.clickDescArrow();
+        assertPriceListDesc();
     }
 
 }
