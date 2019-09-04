@@ -9,6 +9,11 @@ import net.thucydides.core.annotations.StepGroup;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 public class MadisonAddInBasketSteps {
 
     MadisonHomePage madisonHomePage;
@@ -82,6 +87,11 @@ public class MadisonAddInBasketSteps {
     }
 
     @Step
+    public void selectPriceFromDropdown() {
+        resultsPage.selectPrice();
+    }
+
+    @Step
     public void assertProductNotFound() {
         String errMessage = resultsPage.getErrMesage();
         String expected = "Your search returns no results.";
@@ -104,6 +114,22 @@ public class MadisonAddInBasketSteps {
         String expectedMessage = "SHOPPING CART IS EMPTY";
         Assert.assertEquals("Message not shown.", expectedMessage.toLowerCase(), messageFromCart);
     }
+
+    @Step
+    public void sortAscendingPriceList() {
+        List<String> ascendingUnsortedList = resultsPage.getAllPrices();
+        Collections.sort(ascendingUnsortedList);
+        Serenity.getCurrentSession().put("ascPriceList", ascendingUnsortedList);
+    }
+
+    @Step
+    public void assertPriceAscending() {
+        List<String> expectedAsc = (List<String>) Serenity.getCurrentSession().get("ascPriceList");
+        List<String> actualAsc = resultsPage.getAllPrices();
+        System.out.println("expected .....AA");
+        Assert.assertEquals("The lists are not the same", expectedAsc, actualAsc);
+    }
+
 
     @StepGroup
     public void addToCartAndAssert() {
